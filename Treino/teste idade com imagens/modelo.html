@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Identificador de Idade</h1>
+        <p>- <Em>site criado com intuito de aprendizagem</Em> -</p>
+    </header>
+    <main>
+        <div>
+            <p>Insira seu Nome: 
+                <input type="text" name="nome" id="nome">
+            </p>
+            <br>
+            <p>Qual seu Gênero: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="mas">Feminino</label>
+            </p>
+            <br>
+            <p>Ano de Nascimento: 
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <br>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+    </main>
+    <footer>
+        Site desenvolvido por Murillo Moraes Caldeira.
+    </footer>
+    <script src="interação.js"></script>
+</body>
+</html>

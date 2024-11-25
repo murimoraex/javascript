@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSAPORTE</title>
+</head>
+<body>
+    <h1>Sistema de Passaporte</h1>
+    Insira seu país: <input type="text" name="txtpass" id="txtpass">
+    <input type="button" value="Gerar" onclick="gerar()">
+    <div id="res"></div>
+    <script>
+        function gerar() {
+            var pass = window.document.querySelector('input#txtpass')
+            var res = window.document.querySelector('div#res')
+            var p = String(pass.value)
+            if (p == "Brasil") {
+                res.innerHTML = `Seu pais é ${p}. Você é Brasileiro!`
+            } else {
+                res.innerHTML = `Seu pais é ${p}. Você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
